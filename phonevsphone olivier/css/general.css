@@ -1,0 +1,68 @@
+/*
+BEM (Block Element Modifier)
+It's a CSS naming structure convention.
+
+BLOCK: Standalone component that is meaninful on its own.
+ELEMENT: Part of a block that has no standalone meaning.
+MODIFIER: A different version of a block or an element
+
+.block{}
+.block__element{}
+.block__element--modifier{}
+*/
+
+/* GLOBAL RESET */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #212529;
+  line-height: 1.7;
+  background: linear-gradient(to bottom, #ffd89b, #19547b);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* colors */
+  --primary-color: #4c6ef5;
+  --secondary-color: #fa5252;
+  --light-gray: #f8f9fa;
+  --dark-gray: #ccc;
+
+  /*  borders */
+  --border-radius: 8px;
+
+  /* spacing */
+  --spacing-s: 1rem;
+  --spacing-m: 2rem;
+  --spacing-b: 3rem;
+}
+
+/* GRID SYSTEM */
+.grid {
+  display: grid;
+}
+
+.grid-col--1 {
+  grid-template-columns: 1fr;
+}
+
+.grid-col--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-col--3 {
+  grid-template-columns: repeat(3, 1fr);
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>PhoneVsPhone</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script defer type="module" src="./index.js"></script>
+
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1>PhoneVsPhone</h1>
+      <p>compare smartphones easily</p>
+    </header>
+
+    <section class="section section--search">
+      <div class="search__input">
+        <label for="search__input-text"><ion-icon name="phone-portrait-outline"></ion-icon> Search a phone</label>
+        <input
+          type="text"
+          id="search__input-text"
+          name="search__input-text"
+          placeholder="Search your phone"
+        />
+      </div>
+
+      <div class="search__input">
+        <label for="search__input-select"><ion-icon name="checkbox-outline"></ion-icon> Pick one</label>
+        <select name="search__input-select" id="search__input-select"></select>
+      </div>
+
+      <div class="search__input search__input--btn__container">
+        <button id="search__control--clear" class="search__control">
+          <ion-icon name="trash-outline"></ion-icon>
+        </button>
+
+        <button id="search__control--compare" class="search__control">
+          <ion-icon name="git-compare-outline"></ion-icon>
+        </button>
+
+        <button id="search__control--add" class="search__control">
+          <ion-icon name="arrow-undo-circle-outline"></ion-icon>
+        </button>
+      </div>
+    </section>
+
+    <section class="section section--preview">
+      <div class="section--preview__item preview--first">
+        <div class="preview__content">
+          <img
+          class="preview__img"
+          src="./assets/png-clipart-iphone-5-apple-iphone-7-plus-smartphone-face-id-smartphone-electronics-gadget.png"
+          alt="phone"
+          />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+            sed!
+          </p>
+        </div>
+      </div>
+
+      <div class="section--preview__item preview--second">
+        <div class="preview__content">
+          <img
+          class="preview__img"
+          src="./assets/png-clipart-lg-electronics-smartphone-android-lte-30-minutes-gadget-magenta.png"
+          alt="phone"
+          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+            perspiciatis!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <form action="">
+      <div class="pseudo-container">
+          <label for="pseudo">Pseudo</label>
+          <input type="text" autocomplete="off" id="pseudo">
+          <span></span>
+      </div>
+ 
+      <div class="email-container">
+          <label for="email">@</label>
+          <input type="text" autocomplete="off" id="email">
+          <span></span>
+      </div>
+ 
+      <div class="password-container">
+          <label for="password">Mot de Passe</label>
+          <input type="password" autocomplete="off" id="password">
+          <p id="progress-bar"></p>
+          <span></span>
+      </div>
+ 
+      <div class="confirm-container">
+          <label for="confirm">Confirmer Mot de Passe</label>
+          <input type="password" autocomplete="off" id="confirm">
+          <span></span>
+      </div>
+ 
+      <input type="submit" value="Valider">
+ </form>   
+
+
+ <footer>
+      <div class="container" style="padding: 80px 0;" align="center">
+          <a href="#">
+              <i class="fa fa-facebook fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+          </a>
+          <a href="#">
+                  <i class="fa fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+              </a>
+              <a href="#">
+                      <i class="fa fa-google-plus fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+                  </a>
+                  <a href="#">
+                          <i class="fa fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+                      </a>
+                      <a href="#">
+                              <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+                          </a>
+                          <a href="#">
+                                  <i class="fa fa-pinterest fa-lg white-text"></i>
+                              </a>
+      </div>
+      <div style="background: #004872;">
+          <p style="color: #91BEC2; padding: 20px 0;" align="center"> &copy; 2022 Copyright: 
+          <a href="https://www.wildcodeschool.com/fr-FR/campus/bordeaux Created By: G-JM-O>
+          </p>
+      </div>
+  </footer>
+
+  </body>
+</html>
